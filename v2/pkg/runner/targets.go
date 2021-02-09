@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
+	"github.com/gohumble/naabu/v2/pkg/scan"
 	"github.com/projectdiscovery/gologger"
 	"github.com/projectdiscovery/ipranger"
-	"github.com/projectdiscovery/naabu/v2/pkg/scan"
 	"github.com/remeh/sizedwaitgroup"
 )
 
