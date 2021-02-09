@@ -36,6 +36,10 @@ type Runner struct {
 	stats       *clistats.Statistics
 }
 
+func (r Runner) GetScanner() *scan.Scanner {
+	return r.scanner
+}
+
 // NewRunner creates a new runner struct instance by parsing
 // the configuration options, configuring sources, reading lists, etc
 func NewRunner(options *Options) (*Runner, error) {
@@ -196,10 +200,10 @@ retry:
 		r.ConnectVerification()
 	}
 
-	r.handleOutput()
+	//r.handleOutput()
 
 	// handle nmap
-	r.handleNmap()
+	//r.handleNmap()
 
 	return nil
 }
